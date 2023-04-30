@@ -5,20 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Portada</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+    <include src="./views/header.html"></include>
+    <div class="portada-grid">
+      <picture class="torneig-foto">
+        <source srcset="./assets/images/escacs_fusta_portada.jpg?as=webp&width=800" type="image/webp" />
+        <img src="./assets/images/escacs_fusta_portada.jpg" alt="Tauler d'escacs" class="img-fluid" />
       </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+      <h1 class="torneig-titol">Escacs</h1>
+      <p class="torneig-dates">
+        Juliol de 2023
+      </p>
+      <p class="torneig-presentacio">
+        El torneig més esperat de l'any ja ha arribat. Jugadors, prepareu-vos per les batalles més explosives en un tauler d'escacs. 
       </p>
     </div>
     <include src="./views/footer.html"></include>
