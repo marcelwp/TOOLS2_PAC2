@@ -76,15 +76,19 @@ body {
 
 
 //footer
-.uoc-footer {
+.chess-footer {
   margin-top: 1.5rem;
-  font-size: 0.75rem;
   text-align: center;
 }
 
-//header
+//Nav bar for header and footer
+@media (min-width: 550px){
+  .logo-line{
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
-//nav
 .pages-navigator{
     display: inline-block;
 
@@ -98,3 +102,27 @@ body {
     padding-left: 1rem;
   }
 }
+
+
+/////////////////////////////////////
+/// JUGADORS
+//////////////////////////////////
+
+.jugadors{
+  max-width: 800px;
+  margin: auto;
+}
+
+.card-columns{
+  max-width: 800px;
+  margin: auto;
+  column-count: 2;
+  @media (min-width: 550px){
+    column-count: 3;
+  }
+}
+
+.card-columns .card {
+  margin-bottom: 0.75rem;
+}
+
