@@ -12,5 +12,10 @@ $links: #dbd5c4;
 $mqMinWidth: 550px;
 
 $theme-colors: (
-  "primary": #bada55 // posa-hi el codi de color que prefereixis
+  "primary": #bada55,
+  "info": rgb(0, 157, 255),
+  "danger": red
 );
+
+$badge-padding-x: 0.6rem;
+$badge-padding-y: 0.3rem;
