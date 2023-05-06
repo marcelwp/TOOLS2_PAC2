@@ -5,16 +5,17 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$fons: #F8F7F3;
+$blanc: #F8F7F3;
+$vermell: rgb(205, 37, 37);
 $lletra: #0a0906; 
-$links: #dbd5c4;
 
-$mqMinWidth: 550px;
+$mqMinWidth: 420px;
+$mqMediumWidth: 550px;
 
 $theme-colors: (
   "primary": #bada55,
   "info": rgb(0, 157, 255),
-  "danger": red
+  "danger": $vermell
 );
 
 $badge-padding-x: 0.6rem;

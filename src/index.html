@@ -9,19 +9,26 @@
   </head>
   <body>
     <include src="./views/header.html"></include>
-    <div class="container portada-grid">
-      <picture class="torneig-foto">
-        <source srcset="./assets/images/escacs_fusta_portada.jpg?as=webp&width=800" type="image/webp" />
+    <div class="container poster">
+      <picture class="poster__foto">
+        <source srcset="./assets/images/escacs_fusta_portada.jpg?as=webp&width=1080" type="image/webp" />
         <img src="./assets/images/escacs_fusta_portada.jpg" alt="Tauler d'escacs" class="img-fluid" />
       </picture>
-      <h1 class="torneig-titol">Escacs</h1>
-      <p class="torneig-dates">
+      <h1 class="poster__titol">Gran Torneig</h1>
+      <p class="poster__dates">
         Juliol de 2023
       </p>
-      <p class="torneig-presentacio">
+      <p class="poster__participants">
+        32 participants
+      </p>
+      <p class="poster__premi">
+        10k€ en premis
+      </p>
+      <p class="poster__presentacio">
         El torneig més esperat de l'any ja ha arribat. Jugadors, prepareu-vos per les batalles més explosives.
       </p>
     </div>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
