@@ -25,10 +25,6 @@ body {
   max-width: 800px;
 }
 
-.container-center{
-  text-align: center;
-}
-
 a {
   text-decoration: none;
 }
@@ -38,7 +34,6 @@ a {
 /// 
 
 .poster {
-  //margin: auto;
   text-align: center;
   font-family: $font-family-serif;
 }
@@ -107,7 +102,7 @@ a {
 }
 
 /////////////////////////////////////
-/// NAV BAR HEADER I FOOTER
+/// NAV BAR
 /////////////////////////////////////
 @media (min-width: $mqMinWidth){
   .logo-line{
@@ -130,7 +125,9 @@ a {
   }
 }
 
-//FOOTER
+/////////////////////////////////////
+/// HEADER I FOOTER
+/////////////////////////////////////
 .chess-footer, .chess-header {
   padding-top: 1.5rem;
   text-align: center;
