@@ -1,15 +1,19 @@
 //https://www.icolorpalette.com/download/shades/eeebe3_color_shades.jpg
 * {
   box-sizing: border-box;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
+
+/////////////////////////////////////
+/// GENERAL 
+/////////////////////////////////////
 
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -17,8 +21,23 @@ body {
   color: $lletra;
 }
 
-.portada-grid {
+.container {
   max-width: 800px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/// PORTADA
+/// 
+
+.portada{
+  background-color: $links;
+}
+
+.portada-grid {
   margin: auto;
   text-align: center;
 }
@@ -36,9 +55,8 @@ body {
   font-family: $font-family-serif;
 }
 
-//Portada Grid
 @supports (display: grid){
-  @media (min-width: 550px){
+  @media (min-width: $mqMinWidth){
     .portada-grid {
       display: grid;
       grid-template-rows: repeat(7, 1fr);
@@ -74,15 +92,10 @@ body {
   }
 }
 
-
-//footer
-.chess-footer {
-  margin-top: 1.5rem;
-  text-align: center;
-}
-
-//Nav bar for header and footer
-@media (min-width: 550px){
+/////////////////////////////////////
+/// NAV BAR HEADER I FOOTER
+/////////////////////////////////////
+@media (min-width: $mqMinWidth){
   .logo-line{
     display: flex;
     justify-content: space-between;
@@ -103,32 +116,33 @@ body {
   }
 }
 
+//FOOTER
+.chess-footer, .chess-header {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
 
 /////////////////////////////////////
 /// JUGADORS
-//////////////////////////////////
+/////////////////////////////////////
 
-.jugadors{
-  max-width: 800px;
-  margin: auto;
-}
-
-.card-columns{
-  max-width: 800px;
-  margin: auto;
-  column-count: 2;
-  @media (min-width: 550px){
-    column-count: 3;
-  }
-}
-
-.card-columns .card {
+.card {
   margin-bottom: 0.75rem;
+  max-width: 250px;
+  min-width: 150px;
 }
 
-///
+.cartes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+/////////////////////////////////////
 /// SICILIANA
-/// 
+///////////////////////////////////// 
 
 .col{
   min-width: 250px;
@@ -136,4 +150,25 @@ body {
 
 .blockquote, .blockquote-footer{
   margin: 0.5rem;
+}
+
+.accordion-foto{
+  display: grid;
+  grid-template-columns: 2fr;
+}
+
+
+.accordion-body__left-column{
+  grid-column: 1;
+}
+
+.accordion-body__right-column{
+  grid-column: 2;
+}
+
+/// 
+/// FORM
+/// 
+.formulari .form-group{
+  margin-top: 1rem;
 }
