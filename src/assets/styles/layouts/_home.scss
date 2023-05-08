@@ -158,13 +158,13 @@ a {
 /// NAV BAR
 /////////////////////////////////////
 @media (min-width: $mqMinWidth){
-  .logo-line{
+  .navegacio{
     display: flex;
     justify-content: space-between;
   }
 }
 
-.logo-line__navigator{
+.navegacio__pagines{
   display: inline-block;
 
   ul {
@@ -181,10 +181,7 @@ a {
 /////////////////////////////////////
 /// HEADER I FOOTER
 /////////////////////////////////////
-.chess-footer, .chess-header {
-  padding-top: 1.5rem;
-  text-align: center;
-}
+
 
 
 /////////////////////////////////////
